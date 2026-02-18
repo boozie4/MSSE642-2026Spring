@@ -1,4 +1,4 @@
-# Week 1: Cross-Site Scripting (XSS)
+# Assignment 1: Cross-Site Scripting (XSS)
 
 ## Overview
 
