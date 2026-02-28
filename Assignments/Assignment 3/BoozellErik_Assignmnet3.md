@@ -43,16 +43,18 @@ Metaploit was configured to scan only ports 1 through 1024. With this configurat
 ### What is the purpose of port scanning from the perspective of a Black Hat hacker?
 
 - From the perspective of a Black Hat hacker, port scanning is used as a method of reconnaissance. Running a port scan can provide the following information:
--- Which ports are open
--- Which ports are closed
--- Which ports are filtered by a firewall
+
+- Which ports are open
+- Which ports are closed
+- Which ports are filtered by a firewall
 
 When performing the port scan, some of the target ports a hacker may be searching for include the following:
--- Port 22 (SSH)
--- Port 80 (HTTP)
--- Port 443 (HTTPS)
--- Port 3389 (Remote Desktop)
--- Port 21 (FTP)
+
+- Port 22 (SSH)
+- Port 80 (HTTP)
+- Port 443 (HTTPS)
+- Port 3389 (Remote Desktop)
+- Port 21 (FTP)
 
 When a port is labeled as open, it can be a potential point of attach for a hacker.
 
