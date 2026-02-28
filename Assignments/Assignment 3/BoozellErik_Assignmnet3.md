@@ -44,9 +44,9 @@ Metaploit was configured to scan only ports 1 through 1024. With this configurat
 
 - From the perspective of a Black Hat hacker, port scanning is used as a method of reconnaissance. Running a port scan can provide the following information:
 
-- Which ports are open
-- Which ports are closed
-- Which ports are filtered by a firewall
+- - Which ports are open
+- - Which ports are closed
+- - Which ports are filtered by a firewall
 
 When performing the port scan, some of the target ports a hacker may be searching for include the following:
 
