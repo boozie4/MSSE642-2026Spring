@@ -43,28 +43,40 @@ The secure guestbook uses the React data binding ({comment.content}). This cause
 ## Best Practices to Prevent XSS
 
 1. Output encoding
+
 - Escape HTML
 - JavaScript string encoding
 - URL encoding
 - Escape CSS
+
 2. Validate and Sanitize input
-<u>Validation</u>
+**Validation**
+
 - Only allow expected characters
 - Set and enforce length limits
 - Utilize allow lists opposed to block lists
-<u>Sanitize</u>
+**Sanitize**
+
 - DOMPurify
 - OWASP Java HTML Sanitizer
+
 3. Use Content Security Policy
+
 - Strong content security policy can reduce damage even if cross-site scripting does occur.
+
 4. Only use modern frameworks and use them correctly
+
 - Frameworks only help if they are used safely
 - Follow security guidelines from frameworks
+
 5. Keep dependencies updated
+
 - Monitor CVEs
 - Keep plugins updated
 - Patch frameworks when available
+
 6. Regularly perform security testing
+
 - Pen Testing
 - Automated scanners
 - Review code

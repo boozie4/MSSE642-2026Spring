@@ -58,4 +58,40 @@ In this demo, the encryption algorithm is set automatically to AES-256-GCM and c
 
 ## Best Practices to Prevent Cryptographic Failures
 
- 
+1. Use updated and strong encryption algorithms
+
+- AES-256
+- RSA-2048 or higher
+- SHA-256 or SHA-3
+
+2. Encrypt sensitive data at rest
+
+- Full disk encryption
+- Encrypted databases
+- File encryption
+
+3. Encrypt data being transmitted
+
+- Use HTTPS everywhere
+- Use secure APIs
+- Use VPN tunnels where necessary
+- Disable plaintext FTP
+- Disable Telnet
+
+4. Proper key management
+
+- Store keys separately from the encrypted data
+- Make sure keys are rotated regularly
+- Restrict key access utilizing least priviledge
+
+5. Use secure protocols only
+
+- HTTPS
+- SFTP
+- SSH
+
+6. Follow security standards
+
+- NIST guidelines
+- OWASP
+- ISO 27001
