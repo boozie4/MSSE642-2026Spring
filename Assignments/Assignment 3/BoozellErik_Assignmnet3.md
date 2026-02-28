@@ -42,11 +42,11 @@ Metaploit was configured to scan only ports 1 through 1024. With this configurat
 
 ### What is the purpose of port scanning from the perspective of a Black Hat hacker?
 
-- From the perspective of a Black Hat hacker, port scanning is used as a method of reconnaissance. Running a port scan can provide the following information:
+From the perspective of a Black Hat hacker, port scanning is used as a method of reconnaissance. Running a port scan can provide the following information:
 
-- - Which ports are open
-- - Which ports are closed
-- - Which ports are filtered by a firewall
+- Which ports are open
+- Which ports are closed
+- Which ports are filtered by a firewall
 
 When performing the port scan, some of the target ports a hacker may be searching for include the following:
 
@@ -60,18 +60,19 @@ When a port is labeled as open, it can be a potential point of attach for a hack
 
 ### What is the purpose of port scanning from the perspective of an Ethical (White Hat) hacker?
 
-- When performing port scans, White Hat hackers are looking for the same information as Black Hat hackers. However, the reason for finding this information for White Hat hackers is so they can identify security weakensses so they can be patched and fixed before any bad actors exploit them.
+When performing port scans, White Hat hackers are looking for the same information as Black Hat hackers. However, the reason for finding this information for White Hat hackers is so they can identify security weakensses so they can be patched and fixed before any bad actors exploit them.
 
 ### Why did we restrict the scanned ports to 1 thorugh 1024?
 
-- Ports 1 through 1024 are known as "well-known ports". Some of the common ports in this range include the following:
--- Port 21 (FTP)
--- Port 22 (SSH)
--- Port 25 (SMTP)
--- Port 53 (DNS)
--- Port 80 (HTTP)
--- Port 110 (POP3)
--- Port 143 (IMAP)
--- Port 443 (HTTPS)
+Ports 1 through 1024 are known as "well-known ports". Some of the common ports in this range include the following:
+
+- Port 21 (FTP)
+- Port 22 (SSH)
+- Port 25 (SMTP)
+- Port 53 (DNS)
+- Port 80 (HTTP)
+- Port 110 (POP3)
+- Port 143 (IMAP)
+- Port 443 (HTTPS)
 
 These ports tend to run core network serices, making them common targets for hackers. Limiting the scanned ports to 1 through 1024 makes the portscan fast but efficient, making this technique still useful for cybersecurity analysis.
