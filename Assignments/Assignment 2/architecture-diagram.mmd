@@ -1,0 +1,26 @@
+flowchart TB
+    subgraph Internet["INTERNET (Untrusted)"]
+        GC[Guest Client<br/>User Browser<br/>Any Public IP]
+        MC[Member Client<br/>User Browser<br/>Any Public IP]
+        AC[Admin Client<br/>User Browser<br/>Any Public IP]
+    end
+
+    subgraph DMZ["DMZ / Public Network - 10.0.1.0/24 - Trust Boundary - - -"]
+        FW1[Internet Firewall]
+        FES[Front-End Web Server<br/>10.0.1.10<br/>Auth, AuthZ, Sessions]
+    end
+
+    subgraph Trusted["Private Network - 10.0.2.0/24 - Trust Boundary - - -"]
+        FW2[Internal Firewall]
+        DBS[Backend Database Server<br/>10.0.2.10<br/>MySQL/PostgreSQL]
+    end
+
+    GC -->|HTTPS - Browse Trips| FW1
+    MC -->|HTTPS - Login, Register, Profile| FW1
+    AC -->|HTTPS - Admin, Treasury| FW1
+
+    FW1 --> FES
+    FES -->|SQL - Port 3306/5432| FW2
+    FW2 --> DBS
+    DBS --> FW2
+    FW2 --> FES
