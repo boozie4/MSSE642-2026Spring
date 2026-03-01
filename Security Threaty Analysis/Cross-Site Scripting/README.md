@@ -2,7 +2,7 @@
 
 ## Overview
 
-This assignment explains what cross-site scripting is, how it works, and how to prevent this type of attach. 
+This assignment explains what cross-site scripting is, how it works, and how to prevent this type of attach.
 
 ## What is XSS?
 
